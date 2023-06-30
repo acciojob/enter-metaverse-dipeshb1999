@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <title>Update Content on Button Click</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <p id="status">Enter the Metaverse</p>
+  <button id="enterBtn">Enter</button>
 
+  <script>
+    // Get references to the elements
+    const statusElement = document.getElementById('status');
+    const enterBtn = document.getElementById('enterBtn');
+
+    // Add event listener to the button
+    enterBtn.addEventListener('click', function() {
+      // Update the content of the status element
+      statusElement.innerHTML = '<h1>Entered Metaverse</h1>';
+    });
+  </script>
 </body>
-
 </html>
